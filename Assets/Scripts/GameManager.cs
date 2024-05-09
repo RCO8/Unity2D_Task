@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance;
 
     string userName;    //사용자 이름
-    Characters myChar;  //현재 캐릭터
+    Characters myChar = Characters.Knight;  //현재 캐릭터
 
     public AnimatorController[] animators;    //스프라이트에 적용하기 위한 애니메이터
 
