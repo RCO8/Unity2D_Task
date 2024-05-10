@@ -47,4 +47,9 @@ public class PlayerControll : MonoBehaviour
     {
         nameText.text = name;
     }
+
+    public void SetCharacter(int idx)
+    {
+        animator.runtimeAnimatorController = GameManager.Instance.animators[idx];
+    }
 }

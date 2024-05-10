@@ -17,4 +17,11 @@ public class RenameButton : MonoBehaviour
             gameObject.SetActive(false);
         }
     }
+
+    public void ApplyCharacter(int idx)
+    {
+        pc.CanMove = true;
+        GameManager.Instance.SetCharacter(idx);
+        pc.SetCharacter(GameManager.Instance.GetCharacters());
+    }
 }
