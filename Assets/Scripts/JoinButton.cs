@@ -15,7 +15,7 @@ public class JoinButton : MonoBehaviour
         else
         {
             //Debug.Log(inputName.text);
-            GameManager.Instance.SetUserName(inputName.text);
+            GameManager.Instance.userName = inputName.text;
             //게임씬으로 들어가도록
             SceneManager.LoadScene("SampleScene");
             DontDestroyOnLoad(gameManager);
